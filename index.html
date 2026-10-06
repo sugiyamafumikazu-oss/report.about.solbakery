@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SOL BAKERY 省力化補助金 事務局打合せ報告（2026年10月6日）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Old+Mincho:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5F7; --paper:#FFFFFF; --ink:#1D2833; --sub:#556270; --line:#D5DBE1;
+  --accent:#1E5C66; --accent-soft:#E3EEF0; --warn:#9A5B10; --warn-soft:#FBF1E2;
+  --stop:#A3302F; --stop-soft:#F9E7E6;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#141A20; --paper:#1C242C; --ink:#E6EBF0; --sub:#9EAAB6; --line:#33404C;
+    --accent:#6FB6C1; --accent-soft:#1E3238; --warn:#E0A55A; --warn-soft:#3A2D1C;
+    --stop:#E57A78; --stop-soft:#3A2222;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141A20; --paper:#1C242C; --ink:#E6EBF0; --sub:#9EAAB6; --line:#33404C;
+  --accent:#6FB6C1; --accent-soft:#1E3238; --warn:#E0A55A; --warn-soft:#3A2D1C;
+  --stop:#E57A78; --stop-soft:#3A2222;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"BIZ UDPGothic","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  font-size:16px;line-height:1.85}
+.wrap{max-width:860px;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+header{border-left:6px solid var(--accent);padding:.25rem 0 .25rem 1.25rem;margin-bottom:2.5rem}
+.kind{color:var(--sub);font-size:.9rem;margin:0}
+h1{font-family:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:900;
+  font-size:clamp(1.6rem,4.2vw,2.3rem);line-height:1.35;margin:.3rem 0 .8rem}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:.15rem 1rem;font-size:.92rem;color:var(--sub);margin:0}
+.meta dt{font-weight:700}
+.meta dd{margin:0}
+.conclusion{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:1.5rem 1.5rem 1rem;margin-bottom:2.5rem}
+.conclusion h2{margin-top:0}
+.conclusion ol{margin:0;padding-left:1.4rem}
+.conclusion li{margin-bottom:.9rem}
+.conclusion li strong{display:block}
+h2{font-family:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:700;
+  font-size:1.35rem;line-height:1.4;margin:2.75rem 0 1rem;padding-bottom:.4rem;border-bottom:2px solid var(--line)}
+h3{font-size:1.05rem;margin:1.75rem 0 .5rem;color:var(--accent)}
+p{margin:.5rem 0 1rem}
+ul{padding-left:1.3rem;margin:.4rem 0 1rem}
+li{margin-bottom:.35rem}
+.note{border-radius:8px;padding:.9rem 1.1rem;margin:1.2rem 0;font-size:.96rem}
+.note b{display:block;margin-bottom:.2rem}
+.note.stop{background:var(--stop-soft);border-left:4px solid var(--stop)}
+.note.stop b{color:var(--stop)}
+.note.warn{background:var(--warn-soft);border-left:4px solid var(--warn)}
+.note.warn b{color:var(--warn)}
+.note.info{background:var(--accent-soft);border-left:4px solid var(--accent)}
+.table-scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--paper);font-size:.94rem}
+th,td{border:1px solid var(--line);padding:.55rem .75rem;text-align:left;vertical-align:top}
+th{background:var(--accent-soft);font-weight:700}
+.figure{display:flex;flex-wrap:wrap;gap:.6rem 2rem;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;margin:1rem 0}
+.figure div{min-width:9rem}
+.figure span{display:block;font-size:.82rem;color:var(--sub)}
+.figure strong{font-size:1.25rem}
+.est{border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:1rem 1.2rem;font-size:.93rem;line-height:1.7}
+.est .grp{border-left:3px solid var(--accent);padding-left:.8rem;margin:.4rem 0}
+.est .sub{color:var(--sub);padding-left:1.2rem}
+.est .total{border-top:1px dashed var(--line);margin-top:.6rem;padding-top:.5rem;font-weight:700}
+.est .out{color:var(--sub);margin-top:.6rem}
+.options{display:grid;gap:1rem;margin:1rem 0}
+.opt{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem}
+.opt h4{margin:0 0 .3rem;font-size:1rem}
+.opt.recommend{border:2px solid var(--accent)}
+.tag{display:inline-block;font-size:.78rem;background:var(--accent);color:var(--paper);border-radius:4px;padding:.05rem .45rem;margin-left:.4rem;vertical-align:.1em}
+.todo{list-style:none;padding:0}
+.todo li{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.75rem 1rem;margin-bottom:.6rem}
+.todo .who{font-size:.82rem;color:var(--sub);display:block}
+footer{margin-top:3rem;font-size:.85rem;color:var(--sub);border-top:1px solid var(--line);padding-top:1rem}
+@media print{body{background:#fff}.conclusion,.opt,.todo li,.figure,.est{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kind">社内報告　打合せ記録</p>
+  <h1>株式会社SOL BAKERY<br>省力化投資補助金（一般型）交付申請<br>岡山県地域事務局との打合せ</h1>
+  <dl class="meta">
+    <dt>日時</dt><dd>2026年10月6日（火）13:52〜（約36分）</dd>
+    <dt>相手方</dt><dd>省力化投資補助金 岡山県地域事務局　審査担当者、小川様</dd>
+    <dt>当方</dt><dd>杉山</dd>
+    <dt>議題</dt><dd>不備指摘への対応方針（見積書の整理）、50m先の新拠点への設置とスケジュール</dd>
+  </dl>
+</header>
+
+<section class="conclusion">
+  <h2>結論</h2>
+  <ol>
+    <li><strong>補助対象は事業計画書の1〜20番の本体機器に絞る。</strong>周辺機器は本体に紐付けて計上するか、補助対象から外す。補助額は上限3,000万円に達しているため、対象を絞っても補助金額は変わらない。</li>
+    <li><strong>50m先の新拠点は、建物の登記がないと実施場所にできない。</strong>交付決定は現在の店舗で先に受け、建物完成・登記後に計画変更の承認を受ける進め方が現実的。</li>
+    <li><strong>交付決定前の発注・契約は厳禁。</strong>注文書・売買契約の日付が交付決定日より前だと補助金はゼロになる。</li>
+  </ol>
+</section>
+
+<h2>1　見積書・補助対象経費の整理</h2>
+
+<h3>補助額への影響</h3>
+<div class="figure">
+  <div><span>補助上限額</span><strong>3,000万円</strong></div>
+  <div><span>補助率</span><strong>2/3</strong></div>
+  <div><span>上限に達する補助対象経費</span><strong>4,500万円</strong></div>
+</div>
+<p>補助対象経費が4,500万円を超える部分は、増えても減っても補助金額は変わらない。事務局の見立てでは、補助対象外に回せる金額に相当の余裕がある。</p>
+<p>点数が多いと、検査時のシール貼付・写真撮影、実績報告、処分制限（勝手に廃棄できない）の管理がすべて重くなる。事務局からも「点数を減らした方がお互いのため」「これだけ点数が多い案件はめったにない」との発言があった。</p>
+
+<h3>補助対象として認められる範囲</h3>
+<ul>
+  <li>事業計画書に記載された機器と、そのオプション・周辺機器のみ。</li>
+  <li>周辺機器は本体にくっつけて計上するのが通常。ばらして計上すると何の機器か分からず、補助対象外とされやすい。</li>
+  <li>事業計画書に載っていない周辺機器は、本体に紐付けるか除外するかのどちらか。</li>
+</ul>
+
+<h3>事業計画書に記載が確認できない機器（事務局指摘）</h3>
+<div class="table-scroll">
+<table>
+  <thead><tr><th>機器</th><th>事務局の見解</th></tr></thead>
+  <tbody>
+    <tr><td>ドウコンディショナー（もう一つの型番）</td><td rowspan="5">事業計画書に記載が確認できない。周辺機器・オプションと言えないものは外す方向。見積に載せたうえで対象外とするほか、見積から外すことも可。</td></tr>
+    <tr><td>ガステーブル</td></tr>
+    <tr><td>ガスフライヤー</td></tr>
+    <tr><td>グリドル</td></tr>
+    <tr><td>製氷機（判断が微妙とのこと）</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>事務局が推奨する見積書の構成</h3>
+<div class="est">
+  <div class="grp">1番　本体機器A
+    <div class="sub">└ 周辺機器（本体Aと1グループであることが分かるように直下に記載）</div>
+  </div>
+  <div class="grp">2番　本体機器B
+    <div class="sub">└ 周辺機器</div>
+  </div>
+  <div class="grp">…　20番まで</div>
+  <div class="total">ここで一旦小計（補助対象経費）</div>
+  <div class="out">その下に、補助対象外の機器・周辺品をまとめて記載</div>
+</div>
+<ul>
+  <li>補助対象分だけの見積書を別に作ってもらう形でも可。</li>
+  <li>支払いは補助対象分と対象外分を分けても一緒でもよいが、対象外分の請求書も必要になる。分けて払えるなら分けてもらう方が管理しやすい（振込手数料が増えるだけ）。</li>
+  <li>周辺機器を補助対象にした場合、周辺機器にもシールを貼ってもらう方がよい。</li>
+</ul>
+
+<h3>その他の指摘</h3>
+<ul>
+  <li><b>相見積：</b>1社では足りず、金額を揃えてもらう必要がある。単価は一旦揃えてもらったが、見せ方は引き続き調整。</li>
+  <li><b>事業計画書と金額が異なる箇所：</b>変更自体は不可ではない。計画書側の誤りであればその旨を伝えれば足りる。</li>
+  <li><b>番号が別々だが同一人物となっている重複：</b>当方事務スタッフが本日統合作業中。改めて提出する。</li>
+  <li><b>提出期限（今週末）：</b>目安との確認が取れた。事務局側も台帳の審査に時間がかかっている状況。</li>
+</ul>
+
+<h2>2　50m先の新拠点への設置とスケジュール</h2>
+
+<h3>現状</h3>
+<ul>
+  <li>現在は1店舗のみで、12時から20時まで稼働するほど手一杯。約50m先に社長所有の土地があり、そこにも機器を置けないかという相談を受けている。</li>
+  <li>建物は未着手。納品は2027年2〜3月頃と聞いている。</li>
+  <li>導入予定の機器は、現在の設備とほぼ同種で、もう1店舗作れる規模に見えるとの事務局コメントあり（今の店舗に全部は入らないのではとの指摘）。</li>
+</ul>
+
+<h3>省力化の要件との関係（事務局説明）</h3>
+<ul>
+  <li>新店舗を立ち上げてそこに入れるのは基本的に不可。省力化は今ある業務が減ることが前提のため。</li>
+  <li>2拠点に分かれても「2つで1つ」の一体運用で、働く人も今と変わらないなら問題ない（製造業の第1工場・第2工場に分けて入れるのと同じ考え方）。</li>
+  <li>購入した機器があちこちに移るような説明になると疑問を持たれる。</li>
+</ul>
+
+<div class="note stop">
+  <b>建物の登記がないと実施場所として申請できない</b>
+  設置場所が確定していないと交付申請・変更申請はできない。基準は土地の取得ではなく建物の登記。建物が社長個人名義の場合は、会社との賃貸借契約が必要。
+</div>
+
+<h3>進め方の選択肢</h3>
+<div class="options">
+  <div class="opt recommend">
+    <h4>A　現店舗で交付決定 → 建物完成後に計画変更<span class="tag">事務局の示唆</span></h4>
+    <p>先に交付決定を受け、建物の登記後に実施場所追加の計画変更承認を受ける。交付後の変更は交付前より多少ハードルが上がるが、大丈夫だろうとの見解。</p>
+  </div>
+  <div class="opt">
+    <h4>B　建物完成を待ってから申請</h4>
+    <p>不可ではないが、交付決定がかなり先になり、その間は機器を一切注文できない。</p>
+  </div>
+  <div class="opt">
+    <h4>C　急ぐ場合は現店舗に全部設置</h4>
+    <p>既存の機械をどかしてでも現店舗に入れる。変更申請は不要で、現地調査も現店舗で行う。</p>
+  </div>
+</div>
+
+<div class="note warn">
+  <b>全台の設置が終わらないと事業完了にならない</b>
+  交付決定を受けた機器が1台でも未設置なら完了報告ができない。補助対象外の機器は先に入れて使っても構わない。
+</div>
+
+<h3>実施期間</h3>
+<p>事務局の説明では、採択発表（2026年8月末頃）から20か月で、2028年4月頃まで。建物の進捗次第で導入を2027年5〜6月、あるいはさらに1年先にずらすことも可能。</p>
+
+<h2>3　検査・実績報告</h2>
+<ul>
+  <li>検査では機器ごとにシール貼付・写真撮影を確認する。点数が多いと1日がかり。</li>
+  <li>営業中の店舗では邪魔になり、衛生面からも検査が難しい。新拠点に設置する場合は、設置が済んだ時点（営業開始前）で見に行きたいとの意向。</li>
+</ul>
+
+<h2>4　賃上げ要件</h2>
+<ul>
+  <li>事業場内最低賃金を地域別最低賃金＋30円以上とする（毎年）。社長は実施すると言っている。</li>
+  <li>今回、補助率は最低賃金に近い水準の従業員がいることにより1/2から2/3に引き上げられている。</li>
+</ul>
+
+<h2>5　事務局からの運用上の依頼</h2>
+<div class="note info">
+  <b>提出前にメールで事前確認を</b>
+  一度システムで提出して差し戻しになると、また相当の時間がかかる。修正版は出す前にメールで送って見てもらう。
+</div>
+
+<h2>次の対応</h2>
+<ul class="todo">
+  <li><span class="who">杉山　10月7日（水）12時　現地打合せ（重富社長・川上様）</span>
+    確認事項：50m先の建物の着工・竣工・登記の時期と名義、2拠点をどう使うか（現店舗で製造を残すか、従業員の行き来）、納品希望時期、事業計画書にない機器（ガステーブル等）を対象外とすることの了承、補助対象を1〜20番に絞る方針の説明。</li>
+  <li><span class="who">杉山</span>
+    大村商会への見積再作成依頼（1〜20番を先頭に小計、周辺機器は本体の直下、対象外はその下。補助対象分と対象外分の請求書の分け方も）。</li>
+  <li><span class="who">事務スタッフ</span>
+    重複統合版の作成と、正しい見積書の草案作成。システム提出前にメールで事務局へ事前確認。</li>
+  <li><span class="who">杉山 → 社長・大村商会</span>
+    交付決定前に注文書・売買契約を出さないよう改めて周知。</li>
+</ul>
+
+<h2>未決事項</h2>
+<ul>
+  <li>新拠点の建物スケジュールと、選択肢A〜Cのどれで進めるか（10月7日の現地確認を受けて判断）。</li>
+  <li>事業計画書にない機器を見積上どう扱うか（対象外として記載するか、見積から外すか）。</li>
+  <li>重富社長の購入希望範囲と、補助対象の構成のすり合わせ。カタログ型に当てはまる機器もあったが、社長の強い希望で大村商会から一般型で全部購入する前提。</li>
+</ul>
+
+<footer>
+  作成：社会保険労務士法人キャリアデザイン／株式会社ネクシオ　2026年10月6日<br>
+  会議の文字起こしをもとに作成。事務局の発言は打合せ時の口頭説明であり、正式な判断は事務局の書面指示による。
+</footer>
+
+</div>
+</body>
+</html>
